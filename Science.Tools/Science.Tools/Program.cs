@@ -10,7 +10,7 @@ namespace Science.Tools
     {
         static void Main(string[] args)
         {
-            int a = 55764;
+            int a = 557645674;
 
         }
     }
