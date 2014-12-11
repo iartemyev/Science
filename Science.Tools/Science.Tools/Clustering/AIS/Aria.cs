@@ -1,4 +1,4 @@
-﻿namespace Science.Tools.AIS
+﻿namespace Science.Tools.Clustering.AIS
 {
     public class Aria
     {

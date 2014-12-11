@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Science.Tools", "Science.Tools\Science.Tools.csproj", "{6C5B2080-D21E-4976-A707-298225C414A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{E9C24EC3-3472-4629-9A7A-7B7B59D98E87}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\MathNet.Iridium.dll = Lib\MathNet.Iridium.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

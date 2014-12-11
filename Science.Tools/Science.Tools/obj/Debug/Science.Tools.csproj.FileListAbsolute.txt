@@ -107,3 +107,4 @@ D:\DevTools\Visual Studio\GIT\Science\Science.Tools\Science.Tools\bin\Debug\Scie
 D:\DevTools\Visual Studio\GIT\Science\Science.Tools\Science.Tools\obj\Debug\Science.Tools.csprojResolveAssemblyReference.cache
 D:\DevTools\Visual Studio\GIT\Science\Science.Tools\Science.Tools\obj\Debug\Science.Tools.exe
 D:\DevTools\Visual Studio\GIT\Science\Science.Tools\Science.Tools\obj\Debug\Science.Tools.pdb
+E:\DevTools\Projects\Science\Science.Tools\Science.Tools\bin\Debug\MathNet.Iridium.dll

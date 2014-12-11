@@ -73,6 +73,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MathNet.Iridium">
+      <HintPath>..\Lib\MathNet.Iridium.dll</HintPath>
+    </Reference>
     <Reference Include="OpenCvSharp">
       <HintPath>..\packages\OpenCvSharp-AnyCPU.2.4.10.20141111\lib\net40\OpenCvSharp.dll</HintPath>
     </Reference>
@@ -101,19 +104,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AIS\Aibn.cs" />
-    <Compile Include="AIS\AiNet.cs" />
-    <Compile Include="AIS\Airs2.cs" />
-    <Compile Include="AIS\Aria.cs" />
-    <Compile Include="Classification\Ann.cs" />
-    <Compile Include="Classification\Knn.cs" />
-    <Compile Include="Clustering\Forel.cs" />
-    <Compile Include="Clustering\KMeans.cs" />
-    <Compile Include="FeatureExtraction\Brisk.cs" />
-    <Compile Include="FeatureExtraction\Freak.cs" />
-    <Compile Include="FeatureExtraction\Pca.cs" />
-    <Compile Include="FeatureExtraction\Sift.cs" />
-    <Compile Include="FeatureExtraction\Surf.cs" />
+    <Compile Include="Clustering\AIS\AiNet.cs" />
+    <Compile Include="Clustering\AIS\Airs2.cs" />
+    <Compile Include="Clustering\AIS\Aria.cs" />
+    <Compile Include="Data\ITrainingSample.cs" />
+    <Compile Include="Data\PcaSample.cs" />
+    <Compile Include="Data\Types\TrainingSampleTypes.cs" />
+    <Compile Include="FeatureExtraction\FREAK\Freak.cs" />
+    <Compile Include="FeatureExtraction\OpenSURF\ResponseLayer.cs" />
+    <Compile Include="FeatureExtraction\PCA\IPca.cs" />
+    <Compile Include="FeatureExtraction\OpenSURF\FastHessian.cs" />
+    <Compile Include="FeatureExtraction\OpenSURF\IntegralImage.cs" />
+    <Compile Include="FeatureExtraction\OpenSURF\SurfDescriptor.cs" />
+    <Compile Include="FeatureExtraction\OpenSURF\SurfPoint.cs" />
+    <Compile Include="FeatureExtraction\PCA\Pca.cs" />
+    <Compile Include="FeatureExtraction\SURF\Surf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -256,6 +261,13 @@
     <Content Include="dll\x86\opencv_videostab2410.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classification\ANN\" />
+    <Folder Include="Classification\KNN\" />
+    <Folder Include="Clustering\FOREL\" />
+    <Folder Include="Clustering\KMeans\" />
+    <Folder Include="FeatureExtraction\ORB\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
