@@ -107,10 +107,21 @@
     <Compile Include="Clustering\AIS\AiNet.cs" />
     <Compile Include="Clustering\AIS\Airs2.cs" />
     <Compile Include="Clustering\AIS\Aria.cs" />
+    <Compile Include="Clustering\KMeans\ClusteringCategoricalProgram.cs" />
+    <Compile Include="Clustering\KMeans\KMeans.cs" />
     <Compile Include="Data\ITrainingSample.cs" />
+    <Compile Include="Data\ITrainingSet.cs" />
     <Compile Include="Data\PcaSample.cs" />
+    <Compile Include="Data\PcaTrainingSet.cs" />
+    <Compile Include="Data\TrainingSetExtensions.cs" />
     <Compile Include="Data\Types\TrainingSampleTypes.cs" />
     <Compile Include="FeatureExtraction\FREAK\Freak.cs" />
+    <Compile Include="FeatureExtraction\IFeatureExtractor.cs" />
+    <Compile Include="FeatureExtraction\OpenCV\BRISKSample.cs" />
+    <Compile Include="FeatureExtraction\OpenCV\FASTSample.cs" />
+    <Compile Include="FeatureExtraction\OpenCV\FREAKSample.cs" />
+    <Compile Include="FeatureExtraction\OpenCV\MSERSample.cs" />
+    <Compile Include="FeatureExtraction\OpenCV\SiftSurfSample.cs" />
     <Compile Include="FeatureExtraction\OpenSURF\ResponseLayer.cs" />
     <Compile Include="FeatureExtraction\PCA\IPca.cs" />
     <Compile Include="FeatureExtraction\OpenSURF\FastHessian.cs" />
@@ -261,13 +272,16 @@
     <Content Include="dll\x86\opencv_videostab2410.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="FeatureExtraction\OpenSURF\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classification\ANN\" />
     <Folder Include="Classification\KNN\" />
     <Folder Include="Clustering\FOREL\" />
-    <Folder Include="Clustering\KMeans\" />
     <Folder Include="FeatureExtraction\ORB\" />
+    <Folder Include="FeaturesMatching\BruteForce\" />
+    <Folder Include="FeaturesMatching\MahalanobisDistance\" />
+    <Folder Include="FeaturesMatching\NearestNeighbor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
