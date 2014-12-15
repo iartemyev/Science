@@ -6,6 +6,11 @@
     public enum TrainingSamplesTypes
     {
         /// <summary>
+        /// Исходные изображения примеров
+        /// </summary>
+        Src,
+
+        /// <summary>
         /// Проекции Pca
         /// </summary>
         Pca,

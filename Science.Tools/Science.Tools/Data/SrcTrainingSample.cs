@@ -1,9 +1,11 @@
-﻿namespace Science.Tools.Data
+﻿using OpenCvSharp;
+
+namespace Science.Tools.Data
 {
     /// <summary>
-    /// Объект обучающего множества, содержащий проекцию главных компонент исходного примера
+    /// Объект обучающего множества, содержащий изображение исходного примера
     /// </summary>
-    public class PcaSample : ITrainingSample<float[]>
+    public class SrcTrainingSample : ITrainingSample<IplImage>
     {
         /// <summary>
         /// Клас, к которому принадлежит пример
@@ -18,6 +20,6 @@
         /// <summary>
         /// Признаки примера
         /// </summary>
-        public float[] Data { get; set; }
+        public IplImage Data { get; set; }
     }
 }

@@ -13,16 +13,16 @@ namespace Science.Tools.Data
         /// <summary>
         /// Метка времени
         /// </summary>
-        DateTime Timestamp { get; }
+        DateTime Timestamp { get; set; }
 
         /// <summary>
         /// Тип данных выборки
         /// </summary>
-        TrainingSamplesTypes Type { get; }
+        TrainingSamplesTypes Type { get; set; }
 
         /// <summary>
         /// Множество данных обучающей выборки
         /// </summary>
-        IEnumerable<T> DataSet { get; set; }
+        List<T> DataSet { get; set; }
     }
 }

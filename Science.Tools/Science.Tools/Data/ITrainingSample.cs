@@ -12,6 +12,11 @@
         int Class { get; set; }
 
         /// <summary>
+        /// Информация о исходном примере (состав, камера, индекс кадра, ...)
+        /// </summary>
+        string SampleInfo { get; set; }
+
+        /// <summary>
         /// Признаки примера
         /// </summary>
         T Data { get; set; }

@@ -5,9 +5,9 @@ using Science.Tools.Data.Types;
 namespace Science.Tools.Data
 {
     /// <summary>
-    /// Множество обучающей выборки, состоящее из проекций главных компонент исходных данных
+    /// Исходная обучающая выборка
     /// </summary>
-    public class PcaTrainingSet : ITrainingSet<PcaSample>
+    public class SrcTrainingSet : ITrainingSet<SrcTrainingSample>
     {
         /// <summary>
         /// Метка времени
@@ -22,6 +22,6 @@ namespace Science.Tools.Data
         /// <summary>
         /// Множество данных обучающей выборки
         /// </summary>
-        public List<PcaSample> DataSet { get; set; }
+        public List<SrcTrainingSample> DataSet { get; set; }
     }
 }

@@ -104,15 +104,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classification\ANN\IMlp.cs" />
     <Compile Include="Clustering\AIS\AiNet.cs" />
     <Compile Include="Clustering\AIS\Airs2.cs" />
     <Compile Include="Clustering\AIS\Aria.cs" />
     <Compile Include="Clustering\KMeans\ClusteringCategoricalProgram.cs" />
     <Compile Include="Clustering\KMeans\KMeans.cs" />
+    <Compile Include="Data\Helpers\IMGFile.cs" />
+    <Compile Include="Data\Helpers\IMGFileEventArgs.cs" />
+    <Compile Include="Data\Helpers\TrainFileXML.cs" />
     <Compile Include="Data\ITrainingSample.cs" />
     <Compile Include="Data\ITrainingSet.cs" />
     <Compile Include="Data\PcaSample.cs" />
     <Compile Include="Data\PcaTrainingSet.cs" />
+    <Compile Include="Data\SrcTrainingSample.cs" />
+    <Compile Include="Data\SrcTrainingSet.cs" />
     <Compile Include="Data\TrainingSetExtensions.cs" />
     <Compile Include="Data\Types\TrainingSampleTypes.cs" />
     <Compile Include="FeatureExtraction\FREAK\Freak.cs" />
@@ -275,7 +281,6 @@
     <Content Include="FeatureExtraction\OpenSURF\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classification\ANN\" />
     <Folder Include="Classification\KNN\" />
     <Folder Include="Clustering\FOREL\" />
     <Folder Include="FeatureExtraction\ORB\" />
